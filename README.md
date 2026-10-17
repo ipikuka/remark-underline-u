@@ -275,7 +275,7 @@ I also build low-level utilities and plugins for the Unified ecosystem that can 
 [badge-typescript]: https://img.shields.io/npm/types/remark-underline-u
 [url-typescript]: https://www.typescriptlang.org/
 
-[badge-codecov]: https://codecov.io/gh/ipikuka/remark-underline-u/graph/badge.svg?token=G4IHZFTC8A
+[badge-codecov]: https://codecov.io/gh/ipikuka/remark-underline-u/graph/badge.svg?token=MHjBtIDXYK
 [url-codecov]: https://codecov.io/gh/ipikuka/remark-underline-u
 
 [badge-type-coverage]: https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fipikuka%2Fremark-underline-u%2Fmaster%2Fpackage.json
