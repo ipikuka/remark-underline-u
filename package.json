@@ -1,6 +1,6 @@
 {
   "name": "remark-underline-u",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Remark plugin to add underline element in markdown",
   "type": "module",
   "main": "./dist/index.js",
