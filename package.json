@@ -1,0 +1,103 @@
+{
+  "name": "remark-underline-u",
+  "version": "0.0.1",
+  "description": "Remark plugin to add underline element in markdown",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc --build tsconfig.build.json && type-coverage",
+    "format": "npm run prettier && npm run lint",
+    "prettier": "prettier --write .",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:file": "vitest test.plugin.spec.ts",
+    "test-coverage": "vitest run --coverage",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run format && npm run test-coverage"
+  },
+  "files": [
+    "dist/",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipikuka/remark-underline-u.git"
+  },
+  "keywords": [
+    "unified",
+    "mdast",
+    "markdown",
+    "MDX",
+    "remark",
+    "plugin",
+    "remark plugin",
+    "remark underline",
+    "html u",
+    "html underline",
+    "html u element",
+    "html underline element",
+    "underlined text",
+    "remark underlined text"
+  ],
+  "author": "ipikuka <talatkuyuk@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/ipikuka/remark-underline-u#readme",
+  "bugs": {
+    "url": "https://github.com/ipikuka/remark-underline-u/issues"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.5",
+    "@vitest/coverage-v8": "^4.1.12",
+    "@vitest/eslint-plugin": "^1.6.27",
+    "dedent": "^1.7.2",
+    "eslint": "^10.13.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.7",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "rehype-format": "^5.0.1",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "rimraf": "^6.1.3",
+    "type-coverage": "^2.30.4",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.2",
+    "unified": "^11.0.5",
+    "vfile": "^6.0.3",
+    "vitest": "^4.1.12"
+  },
+  "dependencies": {
+    "@types/mdast": "^4.0.4",
+    "unist-builder": "^4.0.0",
+    "unist-util-find-after": "^5.0.0",
+    "unist-util-find-all-after": "^5.0.0",
+    "unist-util-find-all-before": "^5.0.0",
+    "unist-util-find-between": "^1.2.3",
+    "unist-util-visit": "^5.1.0"
+  },
+  "peerDependencies": {
+    "unified": "^11"
+  },
+  "sideEffects": false,
+  "typeCoverage": {
+    "atLeast": 100,
+    "detail": true,
+    "ignoreAsAssertion": true,
+    "ignoreNonNullAssertion": true,
+    "ignoreCatch": true,
+    "strict": true
+  }
+}
